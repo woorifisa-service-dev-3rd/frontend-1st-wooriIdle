@@ -227,6 +227,8 @@ footer a img {
     border-style: solid;
     border-radius: 100%;
     padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 3px;
 }
 
@@ -305,7 +307,7 @@ footer a img {
     margin-bottom: 17px;
     width: 110px;
     font-size: 22px;
-    color: #6a75ca;
+    /* color: red; */
     margin-right: 60px;
 }
 
@@ -317,6 +319,26 @@ footer a img {
     display: inline-block;
     font-size: 22px;
     /* margin-left: 100px; */
+}
+
+#ethan .profile-content-title_script,
+#ethan .txt-about dt {
+    color: #3FBCEC;
+}
+
+#bob .profile-content-title_script,
+#bob .txt-about dt {
+    color: #4E4C83;
+}
+
+#alice .profile-content-title_script,
+#alice .txt-about dt {
+    color: #A05113;
+}
+
+#eve .profile-content-title_script,
+#eve .txt-about dt {
+    color: #AB317F;
 }
 
 
