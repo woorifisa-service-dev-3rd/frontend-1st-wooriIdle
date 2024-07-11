@@ -182,6 +182,14 @@ footer a img {
     }
 }
 
+.profile-content-title_script {
+    font-size: 1.8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
 
 .profile-content {
     width: 100%;
@@ -213,10 +221,13 @@ footer a img {
     width: 60%;
 }
 
-.hello {
+.profile_content_intro {
     font-size: 2.45rem;
     border-width: 0.125rem;
     border-style: solid;
+    border-radius: 100%;
+    padding: 5px;
+    margin: 3px;
 }
 
 
@@ -274,10 +285,12 @@ footer a img {
     font-size: 1.5rem;
     border-width: 0.125rem;
     border-style: solid;
-    border-radius: 30%;
+    border-radius: 20px;
     position: absolute;
     opacity: 0;
     white-space: nowrap;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     transition: opacity 1s ease, left 1s ease, transform 1s ease;
 }
 
