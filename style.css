@@ -80,6 +80,10 @@ main>div {
     background-color: white;
 }
 
+.txt-about a {
+  color: black;
+}
+
 /* footer css */
 footer {
     display: flex;
