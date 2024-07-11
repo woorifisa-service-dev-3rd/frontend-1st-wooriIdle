@@ -1,6 +1,185 @@
-body{
+@font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Pretendard-Regular';
+    background-color: #EFF2F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header css */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    border: #1180C5 solid 5px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header ul > li {
+    list-style: none;
+    float: left;
+    margin: 30px;
+}
+
+header ul > li > a {
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* main css */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main > div {
+    width: 100%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 72px;
+}
+
+.banner img {
+    width: 30%;
+}
+
+.banner > h2 {
+    align-self: flex-start;
+}
+
+.team_item {
+    list-style: none;
+    margin-bottom: 72px;
+    height: 300px;
+    background-color: white;
+}
+
+/* footer css */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+}
+
+footer a {
+    margin-right: 30px;
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* animation effect */
+.nav>ul>li>a:hover span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-size: 20px;
+}
+
+  /* -----ethan - animation----- */
+  .name_btn0:hover span:nth-child(1) {
+    color: #3fbcec;
+    animation-delay: .1s;
+  }
+  
+  .name_btn0:hover span:nth-child(2) {
+    color: #3fbcec;
+    animation-delay: .2s;
+  }
+  
+  .name_btn0:hover span:nth-child(3) {
+    color: #3fbcec;
+    animation-delay: .3s;
+  }
+
+
+
+  /* -----bob - animation----- */
+.name_btn1:hover span:nth-child(1) {
+    color: #4e4c83;
+    animation-delay: .1s;
+  }
+  
+  .name_btn1:hover span:nth-child(2) {
+    color: #4e4c83;
+    animation-delay: .2s;
+  }
+  
+  .name_btn1:hover span:nth-child(3) {
+    color: #4e4c83;
+    animation-delay: .3s;
+  }
+  
+  
+  .name_btn2:hover span:nth-child(1) {
+    color: #a05113;
+    animation-delay: .1s;
+  }
+  
+  /* -----alice - animation----- */
+  .name_btn2:hover span:nth-child(2) {
+    color: #a05113;
+    animation-delay: .2s;
+  }
+  
+  .name_btn2:hover span:nth-child(3) {
+    color: #a05113;
+    animation-delay: .3s;
+  }
+  
+  /* -----eve - animation----- */
+  .name_btn3:hover span:nth-child(1) {
+    color: #ab317f;
+    animation-delay: .1s;
+  }
+  
+  .name_btn3:hover span:nth-child(2) {
+    color: #ab317f;
+    animation-delay: .2s;
+  }
+  
+  .name_btn3:hover span:nth-child(3) {
+    color: #ab317f;
+    animation-delay: .3s;
+  }
+  
+  @keyframes bounce {
+    100% {
+      top: -30px;
+    }
+  }
