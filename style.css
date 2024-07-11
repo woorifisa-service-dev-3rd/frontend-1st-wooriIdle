@@ -4,3 +4,55 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+
+
+/* ------ 카드 움직이는 효과 ------*/
+.profile_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_content_im {
+    transition: transform 1s ease;
+    border-radius: 10%;
+    /* z-index: 1; */
+}
+
+.description {
+    position: absolute;
+    /* left: 100%; */
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 1s ease, left 1s ease, transform 1s ease;
+}
+
+.profile_content:hover .profile_content_im {
+    transform: translateX(-100%);
+}
+
+.profile_content:hover .description {
+    transform: translateX(100%);
+    opacity: 1;
+}
+
+
+
+/* ------ 사람 정보 ------ */
+.txt-about dt {
+    display: inline-block;
+    margin-bottom: 17px;
+    width: 110px;
+    font-size: 22px;
+    color: #6a75ca;
+    margin-right: 60px;
+  }
+  .txt-about {
+    margin-top: 55px;
+  }
+  .txt-about dd {
+    display: inline-block;
+    font-size: 22px;
+    /* margin-left: 100px; */
+  }
