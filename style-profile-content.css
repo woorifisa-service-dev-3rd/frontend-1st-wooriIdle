@@ -9,6 +9,39 @@ body {
     font-family: 'Pretendard-Regular';
 }
 
+.div0 {
+    width: 100%;
+}
+
+.div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.div > img {
+    min-height: 100%;
+}
+
+.div > table {
+    height: fit-content;
+    font-size: 1.5rem;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 60%;
+}
+
+.hello {
+    font-size: 2.45rem;
+    border-width: 0.125rem;
+    border-style: solid;
+}
+
 .profile-content-title_script {
     text-align: center;
 }
