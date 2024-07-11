@@ -1,221 +1,387 @@
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Pretendard-Regular';
-  background-color: #EFF2F8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* header css */
-header {
-  display: flex;
-  justify-content: space-between;
-  background: white;
-  width: 100%;
-  border: #1180C5 solid 5px;
-}
-
-header div {
-  display: flex;
-  align-items: center;
-}
-
-header ul>li {
-  list-style: none;
-  float: left;
-  margin: 30px;
-}
-
-header ul>li>a {
-  text-decoration-line: none;
-  color: black;
-  font-weight: bold;
-  font-size: large;
-}
-
-/* main css */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-main>div {
-  width: 100%;
-}
-
-.banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-  padding: 30px;
-  margin-bottom: 72px;
-}
-
-.banner img {
-  width: 30%;
-}
-
-.banner>h2 {
-  align-self: flex-start;
-}
-
-.team_item {
-  list-style: none;
-  margin-bottom: 72px;
-  background-color: white;
-}
-
-/* footer css */
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  width: 100%;
-  padding: 30px;
-}
-
-footer a {
-  margin-right: 30px;
-}
-
-footer a img {
-  width: 30px;
-  height: 30px;
-}
-
-
-
-/* animation effect */
-.nav>ul>li>a:hover span {
-  position: relative;
-  top: 20px;
-  display: inline-block;
-  animation: bounce .3s ease infinite alternate;
-  font-size: 20px;
-}
-
-/* -----ethan - animation----- */
-.name_btn0:hover span:nth-child(1) {
-  color: #3fbcec;
-  animation-delay: .1s;
-}
-
-.name_btn0:hover span:nth-child(2) {
-  color: #3fbcec;
-  animation-delay: .2s;
-}
-
-.name_btn0:hover span:nth-child(3) {
-  color: #3fbcec;
-  animation-delay: .3s;
-}
-
-
-
-/* -----bob - animation----- */
-.name_btn1:hover span:nth-child(1) {
-  color: #4e4c83;
-  animation-delay: .1s;
-}
-
-.name_btn1:hover span:nth-child(2) {
-  color: #4e4c83;
-  animation-delay: .2s;
-}
-
-.name_btn1:hover span:nth-child(3) {
-  color: #4e4c83;
-  animation-delay: .3s;
-}
-
-
-.name_btn2:hover span:nth-child(1) {
-  color: #a05113;
-  animation-delay: .1s;
-}
-
-/* -----alice - animation----- */
-.name_btn2:hover span:nth-child(2) {
-  color: #a05113;
-  animation-delay: .2s;
-}
-
-.name_btn2:hover span:nth-child(3) {
-  color: #a05113;
-  animation-delay: .3s;
-}
-
-/* -----eve - animation----- */
-.name_btn3:hover span:nth-child(1) {
-  color: #ab317f;
-  animation-delay: .1s;
-}
-
-.name_btn3:hover span:nth-child(2) {
-  color: #ab317f;
-  animation-delay: .2s;
-}
-
-.name_btn3:hover span:nth-child(3) {
-  color: #ab317f;
-  animation-delay: .3s;
-}
-
-@keyframes bounce {
-  100% {
-    top: -30px;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
   }
-}
-
-
-.profile-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.profile-content-area {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.profile-content-area>img {
-  min-height: 100%;
-}
-
-.profile-content-area>table {
-  height: fit-content;
-  font-size: 1.5rem;
-}
-
-.content-left {
-  width: 30%;
-}
-
-.content-right {
-  width: 60%;
-}
-
-.hello {
-  font-size: 2.45rem;
-  border-width: 0.125rem;
-  border-style: solid;
-}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Pretendard-Regular';
+    background-color: #EFF2F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* header css */
+  header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    border: #1180C5 solid 5px;
+  }
+  
+  header div {
+    display: flex;
+    align-items: center;
+  }
+  
+  header ul>li {
+    list-style: none;
+    float: left;
+    margin: 30px;
+  }
+  
+  header ul>li>a {
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  /* main css */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  main>div {
+    width: 100%;
+  }
+  
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 72px;
+  }
+  
+  .banner img {
+    width: 30%;
+  }
+  
+  .banner>h2 {
+    align-self: flex-start;
+  }
+  
+  .team_item {
+    list-style: none;
+    margin-bottom: 72px;
+    background-color: white;
+  }
+  
+  /* footer css */
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  footer a {
+    margin-right: 30px;
+  }
+  
+  footer a img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  
+  
+  /* animation effect */
+  .nav>ul>li>a:hover span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-size: 20px;
+  }
+  
+  /* -----ethan - animation----- */
+  .name_btn0:hover span:nth-child(1) {
+    color: #3fbcec;
+    animation-delay: .1s;
+  }
+  
+  .name_btn0:hover span:nth-child(2) {
+    color: #3fbcec;
+    animation-delay: .2s;
+  }
+  
+  .name_btn0:hover span:nth-child(3) {
+    color: #3fbcec;
+    animation-delay: .3s;
+  }
+  
+  
+  
+  /* -----bob - animation----- */
+  .name_btn1:hover span:nth-child(1) {
+    color: #4e4c83;
+    animation-delay: .1s;
+  }
+  
+  .name_btn1:hover span:nth-child(2) {
+    color: #4e4c83;
+    animation-delay: .2s;
+  }
+  
+  .name_btn1:hover span:nth-child(3) {
+    color: #4e4c83;
+    animation-delay: .3s;
+  }
+  
+  
+  .name_btn2:hover span:nth-child(1) {
+    color: #a05113;
+    animation-delay: .1s;
+  }
+  
+  /* -----alice - animation----- */
+  .name_btn2:hover span:nth-child(2) {
+    color: #a05113;
+    animation-delay: .2s;
+  }
+  
+  .name_btn2:hover span:nth-child(3) {
+    color: #a05113;
+    animation-delay: .3s;
+  }
+  
+  /* -----eve - animation----- */
+  .name_btn3:hover span:nth-child(1) {
+    color: #ab317f;
+    animation-delay: .1s;
+  }
+  
+  .name_btn3:hover span:nth-child(2) {
+    color: #ab317f;
+    animation-delay: .2s;
+  }
+  
+  .name_btn3:hover span:nth-child(3) {
+    color: #ab317f;
+    animation-delay: .3s;
+  }
+  
+  @keyframes bounce {
+    100% {
+      top: -30px;
+    }
+  }
+  
+  /* 카드 위치 */
+  .profile_section {
+    /* display: flex; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* height: 100vh; */
+  }
+  
+  /* ------ 카드 움직이는 효과 ------*/
+  .profile_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* margin-bottom으로도 가능 */
+    /* margin-top: 200px; */
+  }
+  
+  .profile_content_im {
+    transition: transform 1s ease;
+    border-radius: 10%;
+    /* z-index: 1; */
+  
+    width: 438px;
+    height: 438px;
+  }
+  
+  .description {
+    position: absolute;
+    /* left: 100%; */
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 1s ease, left 1s ease, transform 1s ease;
+  }
+  
+  .profile_content:hover .profile_content_im {
+    transform: translateX(-350px);
+  }
+  
+  .profile_content:hover .description {
+    transform: translateX(350px);
+    opacity: 1;
+  }
+  
+  
+  /* -----한줄 소개 테스트----- */
+  .profile_content_intro {
+    align-items: flex-end;
+    font-size: 2.45rem;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-radius: 30%;
+    position: absolute;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 1s ease, left 1s ease, transform 1s ease;
+  }
+  
+  .profile_content:hover .profile_content_intro {
+    transform: translate(350px, 219px);
+    opacity: 1;
+  }
+  
+  /* ------ 사람 정보 ------ */
+  .txt-about dt {
+    display: inline-block;
+    margin-bottom: 17px;
+    width: 110px;
+    font-size: 22px;
+    color: #6a75ca;
+    margin-right: 60px;
+  }
+  
+  .txt-about {
+    margin-top: 55px;
+  }
+  
+  .txt-about dd {
+    display: inline-block;
+    font-size: 22px;
+    /* margin-left: 100px; */
+  }
+  
+  
+  /* 일반 크기 */
+  
+  
+  
+  /* 중간 크기 */
+  @media ( min-width: 768px ) and ( max-width: 1023px) {
+    * {
+      font-size: 16px;
+    }
+  
+    header ul > li {
+      margin: 15px;
+    }
+  
+    .logo {
+      width: 50px;
+    }
+  
+    .profile_content:hover .description {
+        transform: translateX(170px);
+        opacity: 1;
+    }
+  
+    .profile_content:hover .profile_content_im {
+        transform: translateX(-170px);
+    }
+  
+    .profile_content_im {
+        width: 300px;
+        height: 300px;
+        /* margin-top: 20px; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  
+    .txt-about {
+        margin-top: 10px;
+    }
+  
+    .txt-about dt {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: 2px;
+    }
+  
+    .txt-about dd {
+        display: inline-block;
+        font-size: 1em;
+        /* margin-left: 100px; */
+    }
+  
+    .profile_content:hover .profile_content_intro {
+        /* transform: translateY(200px); */
+        transform: translate(250px, 160px);
+        opacity: 1;
+        font-size: 1em;
+    }
+  }
+  
+  
+  /* 크기가 줄어질때 */
+  @media ( min-width: 0px ) and ( max-width: 767px) {
+  
+    * {
+      font-size: 12px;
+    }
+  
+    header ul > li {
+      visibility: hidden;
+    }
+  
+    .logo {
+      width: 25px;
+    }
+  
+    .profile_content:hover .description {
+        transform: translateX(100px);
+        opacity: 1;
+    }
+  
+    .profile_content:hover .profile_content_im {
+        transform: translateX(-160px);
+    }
+  
+    .profile_content_im {
+        width: 150px;
+        height: 150px;
+        /* margin-top: 20px; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  
+    .txt-about {
+        margin-top: 10px;
+    }
+  
+    .txt-about dt {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: 2px;
+    }
+  
+    .txt-about dd {
+        display: inline-block;
+        font-size: 1em;
+        /* margin-left: 100px; */
+    }
+  
+    .profile_content:hover .profile_content_intro {
+        /* transform: translateY(200px); */
+        transform: translate(100px, 70px);
+        opacity: 1;
+        font-size: 1em;
+    }
+  }
