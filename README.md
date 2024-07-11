@@ -6,6 +6,8 @@
 
 우리 아이들 팀 소개 웹 페이지입니다.
 
+![-Chrome2024-07-1119-09-27-ezgif com-video-to-gif-converter (1)](https://github.com/woorifisa-service-dev-3rd/frontend-1st-wooriIdle/assets/66460447/16b1aae1-a1c5-4a95-ba76-87a5276d7de6)
+
 ### 역할 분담
 - 이성희 : 프로파일 아이템 및 애니메이션 적용
 - 조예은 : 전체 레이아웃
