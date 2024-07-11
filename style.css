@@ -36,14 +36,13 @@ header div {
 header ul > li {
     list-style: none;
     float: left;
-    margin: 30px;
 }
 
 header ul > li > a {
     text-decoration-line: none;
     color: black;
     font-weight: bold;
-    font-size: large;
+    font-size: 1rem;
 }
 
 /* main css */
@@ -98,6 +97,51 @@ footer a {
 footer a img {
     width: 30px;
     height: 30px;
+}
+
+/*노트북 & PC : 1024px-*/
+@media all and (min-width:1024px){
+  * {
+    font-size: 20px;
+  }
+
+  header ul > li {
+    margin: 30px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
+
+/*태블릿 가로, 세로 : 768px-1023px*/
+@media all and (min-width:768px) and (max-width:1023px){
+  * {
+    font-size: 16px;
+  }
+
+  header ul > li {
+    margin: 15px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}
+
+/*모바일 가로, 세로 : -767px*/
+@media all and (max-width:767px){
+  * {
+    font-size: 12px;
+  }
+
+  header ul > li {
+    visibility: hidden;
+  }
+
+  .logo {
+    width: 25px;
+  }
 }
 
 
