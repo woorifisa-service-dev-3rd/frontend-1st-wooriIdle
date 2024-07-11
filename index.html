@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>우리 아이들</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @font-face {
-            font-family: 'CHOGOONCHICKENSCRATCHV3';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2406-2@1.0/CHOGOONCHICKENSCRATCHV3.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-    </style>
 </head>
 <body>
-    <div class="profile_content">
-        <img src="profile-Bob.jpg" alt="BOB_Image" class="profile_content_im">
-        <div class="description">
-            <div class="profile_content_area">
-                <dl class="txt-about">
-                    <div>
-                        <dt>이름</dt>
-                        <dd>이성희</dd>
-                    </div>
-                    <div>
-                        <dt>생년월일</dt>
-                        <dd>00.09.30</dd>
-                    </div>
-                    <div>
-                        <dt>mbti</dt>
-                        <dd>ISTJ</dd>
-                    </div>
-                    <div>
-                        <dt>github</dt>
-                        <dd>주소</dd>
-                    </div>
-                    <div>
-                        <dt>취미</dt>
-                        <dd>여행 다니기</dd>
-                    </div>
-                    <div>
-                        <dt>민초 vs 반민초</dt>
-                        <dd>반민초</dd>
-                    </div>
-                </dl>
-            </div>
-            <p class="profile_content_intro">이곳에 설명을 입력하세요.</p>
+    <header>
+        <div class="title">
+            <img src="src/logo.png" alt="logo"  width="100px">
+            <h1>우리 아이들</h1>
         </div>
-    </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#bob">이성희</a>
+                </li>
+                <li>
+                    <a href="#bob">조예은</a>
+                </li>
+                <li>
+                    <a href="#bob">최윤정</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <div class="banner">
+            <img src="src/team_img.png" alt="팀 이미지">
+            <h2>안녕하세요 I들의 모임입니다.</h2>
+        </div>
+        <div>
+            <ul class="team">
+                <li id="bob" class="team_item">
+                    이성희
+                </li>
+                <li id="alice" class="team_item">
+                    조예은
+                </li>
+                <li id="eve" class="team_item">
+                    최윤정
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <button><img src="src/mail_icon.png" alt="메일"></button>
+            <button><img src="src/web_icon.png" alt="웹"></button>
+            <button><img src="src/github_icon.png" alt="깃허브"></button>
+        </div>
+    </footer>
 </body>
 </html>
