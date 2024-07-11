@@ -15,14 +15,15 @@
 
 ## 💄 UI 스타일 가이드라인
 
-### layout
-![사진]()
+### Layout
+![사진](src/wire_frame.png)
 
-### font
-[프리텐다드](https://noonnu.cc/font_page/694)
+### Font
+**[프리텐다드](https://noonnu.cc/font_page/694)**
+![프리텐다드](src/font.png)
 
 
-### color
+### Color
 
 ![색상 사진](src/color.png)
 
