@@ -36,14 +36,13 @@ header div {
 header ul>li {
     list-style: none;
     float: left;
-    margin: 30px;
 }
 
 header ul>li>a {
     text-decoration-line: none;
     color: black;
     font-weight: bold;
-    font-size: large;
+    font-size: 1rem;
 }
 
 /* main css */
@@ -218,4 +217,233 @@ footer a img {
     font-size: 2.45rem;
     border-width: 0.125rem;
     border-style: solid;
+}
+
+
+/* 카드 위치 */
+.profile_section {
+    /* display: flex; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* height: 100vh; */
+}
+
+/* ------ 카드 움직이는 효과 ------*/
+.profile_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin-bottom으로도 가능 */
+    /* margin-top: 200px; */
+}
+
+.profile_content_im {
+    transition: transform 1s ease;
+    border-radius: 10%;
+    /* z-index: 1; */
+
+    width: 438px;
+    height: 438px;
+}
+
+.description {
+    position: absolute;
+    /* left: 100%; */
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 1s ease, left 1s ease, transform 1s ease;
+}
+
+.profile_content:hover .profile_content_im {
+    transform: translateX(-350px);
+}
+
+.profile_content:hover .description {
+    transform: translateX(350px);
+    opacity: 1;
+}
+
+
+/* -----한줄 소개 테스트----- */
+.profile_content_intro {
+    align-items: flex-end;
+    font-size: 1.5rem;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-radius: 30%;
+    position: absolute;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 1s ease, left 1s ease, transform 1s ease;
+}
+
+.profile_content:hover .profile_content_intro {
+    transform: translate(350px, 219px);
+    opacity: 1;
+}
+
+/* ------ 사람 정보 ------ */
+.txt-about dt {
+    display: inline-block;
+    margin-bottom: 17px;
+    width: 110px;
+    font-size: 22px;
+    color: #6a75ca;
+    margin-right: 60px;
+}
+
+.txt-about {
+    margin-top: 55px;
+}
+
+.txt-about dd {
+    display: inline-block;
+    font-size: 22px;
+    /* margin-left: 100px; */
+}
+
+
+/* 일반 크기 */
+/*노트북 & PC : 1024px-*/
+@media all and (min-width:1024px) {
+    * {
+        font-size: 20px;
+    }
+
+    header ul>li {
+        margin: 30px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .team_item {
+        padding-bottom: 50px;
+    }
+}
+
+
+/* 중간 크기 */
+@media (min-width: 768px) and (max-width: 1023px) {
+    * {
+        font-size: 16px;
+    }
+
+    header ul>li {
+        margin: 15px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .team_item {
+        padding-bottom: 40px;
+    }
+
+    .profile_content:hover .description {
+        transform: translateX(170px);
+        opacity: 1;
+    }
+
+    .profile_content:hover .profile_content_im {
+        transform: translateX(-170px);
+    }
+
+    .profile_content_im {
+        width: 300px;
+        height: 300px;
+        /* margin-top: 20px; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .txt-about {
+        margin-top: 10px;
+    }
+
+    .txt-about dt {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: 2px;
+    }
+
+    .txt-about dd {
+        display: inline-block;
+        font-size: 1em;
+        /* margin-left: 100px; */
+    }
+
+    .profile_content:hover .profile_content_intro {
+        /* transform: translateY(200px); */
+        transform: translate(250px, 160px);
+        opacity: 1;
+        font-size: 1em;
+    }
+}
+
+
+/* 크기가 줄어질때 */
+@media (min-width: 0px) and (max-width: 767px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    header ul>li {
+        visibility: hidden;
+    }
+
+    .logo {
+        width: 25px;
+    }
+
+    .team_item {
+        padding-bottom: 10px;
+    }
+
+    .profile_content:hover .description {
+        transform: translateX(100px);
+        opacity: 1;
+    }
+
+    .profile_content:hover .profile_content_im {
+        transform: translateX(-160px);
+    }
+
+    .profile_content_im {
+        width: 150px;
+        height: 150px;
+        /* margin-top: 20px; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .txt-about {
+        margin-top: 10px;
+    }
+
+    .txt-about dt {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: 2px;
+    }
+
+    .txt-about dd {
+        display: inline-block;
+        font-size: 1em;
+        /* margin-left: 100px; */
+    }
+
+    .profile_content:hover .profile_content_intro {
+        /* transform: translateY(200px); */
+        transform: translate(100px, 70px);
+        opacity: 1;
+        font-size: 1em;
+    }
 }
