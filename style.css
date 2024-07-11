@@ -99,3 +99,87 @@ footer a img {
     width: 30px;
     height: 30px;
 }
+
+
+
+/* animation effect */
+.nav>ul>li>a:hover span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-size: 20px;
+}
+
+  /* -----ethan - animation----- */
+  .name_btn0:hover span:nth-child(1) {
+    color: #3fbcec;
+    animation-delay: .1s;
+  }
+  
+  .name_btn0:hover span:nth-child(2) {
+    color: #3fbcec;
+    animation-delay: .2s;
+  }
+  
+  .name_btn0:hover span:nth-child(3) {
+    color: #3fbcec;
+    animation-delay: .3s;
+  }
+
+
+
+  /* -----bob - animation----- */
+.name_btn1:hover span:nth-child(1) {
+    color: #4e4c83;
+    animation-delay: .1s;
+  }
+  
+  .name_btn1:hover span:nth-child(2) {
+    color: #4e4c83;
+    animation-delay: .2s;
+  }
+  
+  .name_btn1:hover span:nth-child(3) {
+    color: #4e4c83;
+    animation-delay: .3s;
+  }
+  
+  
+  .name_btn2:hover span:nth-child(1) {
+    color: #a05113;
+    animation-delay: .1s;
+  }
+  
+  /* -----alice - animation----- */
+  .name_btn2:hover span:nth-child(2) {
+    color: #a05113;
+    animation-delay: .2s;
+  }
+  
+  .name_btn2:hover span:nth-child(3) {
+    color: #a05113;
+    animation-delay: .3s;
+  }
+  
+  /* -----eve - animation----- */
+  .name_btn3:hover span:nth-child(1) {
+    color: #ab317f;
+    animation-delay: .1s;
+  }
+  
+  .name_btn3:hover span:nth-child(2) {
+    color: #ab317f;
+    animation-delay: .2s;
+  }
+  
+  .name_btn3:hover span:nth-child(3) {
+    color: #ab317f;
+    animation-delay: .3s;
+  }
+  
+  @keyframes bounce {
+    100% {
+      top: -30px;
+    }
+  }
