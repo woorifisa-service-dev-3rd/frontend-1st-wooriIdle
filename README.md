@@ -58,3 +58,7 @@
 [팀 소개 웹페이지](https://woorifisa-service-dev-3rd.github.io/frontend-1st-wooriIdle/)
 
 <br><br>
+
+## :triangular_ruler: Lighthouse
+![image](https://github.com/user-attachments/assets/f3cb6329-8195-4791-9517-4b0df83ea5f1)
+
