@@ -53,12 +53,6 @@
 
 <br><br>
 
-## ✨ 이용 방법
-
-
-
-<br><br>
-
 ## 🔗 배포 링크
 
 [팀 소개 웹페이지](https://woorifisa-service-dev-3rd.github.io/frontend-1st-wooriIdle/)
